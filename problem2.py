@@ -1,4 +1,5 @@
 #!python3
+
 """
 ##### Problem 2
 Create a function that determines if a triangle is scalene,
@@ -21,23 +22,26 @@ assert triangle(5,15,12) == 3
 assert triangle(1,1,4) == 0  
 (2 points)
 """
-a = 5
+import math
+a = 1
 
-b = 15
+b = 1
 
-c = 12
+c = 4
 
 def triangle(a,b,c):
  if a+b>=c and b+c>=a and c+a>=b:
-    sa = pow(a, 2)
-    sb = pow(b, 2)
-    sc = pow(c, 2)
-    if a*a + b*b == c*c:
-        return("2")
-    if (a != b or a != c or b != c):
-        return("1")
-    if (sa > sc + sb or sb > sa+sc or sc > sa+sb):
+      e = [a,b,c]
+      q = max(e)
+      w = min(e)
+      p = sorted(e)
+      r = p[1]
+      if (q*q>w*w+r*r):
         return("3")
+      elif (q*q==w*w+r*r):
+        return("2")
+      else:
+        return("1")
  else:
         return("0")
 
