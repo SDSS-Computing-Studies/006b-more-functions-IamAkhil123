@@ -21,11 +21,11 @@ assert triangle(5,15,12) == 3
 assert triangle(1,1,4) == 0  
 (2 points)
 """
-a = 1
+a = 5
 
-b = 1
+b = 15
 
-c = 4
+c = 12
 
 def triangle(a,b,c):
  if a+b>=c and b+c>=a and c+a>=b:
