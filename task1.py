@@ -11,12 +11,20 @@ currBTC shows that the conversion is 1 btc = 45000 cad
 Sample assertions:
 
 assert btcTocad(1) == 45000
+
+if __name__ == "__main__":
+    assert btcTocad(1) == 45000
+
 (2 points) 
 """
+x = 1
 
-def btcTocad():
-    pass
+def convertor(x):
+  y = x*45000
+  return(y)
 
+u = convertor(x)
+print(u)
 
 """
 This checks to see if you are running the program as the main script or
@@ -24,5 +32,7 @@ if it is imported by another program.
 If this py file is imported by another program, then the commands below
 are not executed.
 """
-if __name__ == "__main__":
-    assert btcTocad(1) == 45000
+
+def btcTocad():
+    pass
+
