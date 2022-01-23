@@ -17,23 +17,14 @@ if __name__ == "__main__":
     assert btcTocad(1) == 45000
 
 (2 points) 
-=======
->>>>>>> 61a2a9ad1bd861fb16102ff6aba29daab843f983
+
 """
 x = 1
 
-<<<<<<< HEAD
+
 def convertor(x):
   y = x*45000
   return(y)
-=======
-def convertor():
- x = int(input())
- y = x*45000
- print(y)
-
-convertor()
->>>>>>> 61a2a9ad1bd861fb16102ff6aba29daab843f983
 
 u = convertor(x)
 print(u)
@@ -44,10 +35,8 @@ if it is imported by another program.
 If this py file is imported by another program, then the commands below
 are not executed.
 """
-<<<<<<< HEAD
+
 
 def btcTocad():
     pass
 
-=======
->>>>>>> 61a2a9ad1bd861fb16102ff6aba29daab843f983
